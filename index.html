@@ -10,9 +10,28 @@
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="Images/image1.avif">
+    <script>
+        function getElem() {
+            body = document.getElementsByTagName('body')[0];
+            if (document.querySelector(".Alert").style.display == "") {
+                body.style.overflowY = "hidden"
+            }
+        }
+        function closeWarning() {
+            document.querySelector(".Alert").style.display = "none";
+            body.style.overflowY = "visible"
+            console.log(body);
+        }
+    </script>
 </head>
-
-<body>
+<body onload="getElem()">
+    <div class="Alert">
+        <div>
+            <i class="fas fa-times close" onclick="closeWarning()"></i>
+            <h1><i class="far fa-check-square"></i> I am Noman Ahmed</h1>
+            <p>This is Not copy write code website Written officially be me </p>
+        </div>
+    </div>
     <nav>
         <h1><i class="fas fa-grin-alt"></i> <span class="logoArea">Noman</span></h1>
         <ul class="homeArea">
@@ -166,56 +185,56 @@
         <div class="dataMain">
             <div class="onepart">
                 <div>
-                    <p class="onepartP">Mobile App Design</p>
-                    <h4>Travel Mobile App</h4>
+                    <p class="onepartP">Web App Design</p>
+                    <h4>Coffee Shop Websie</h4>
                 </div>
                 <p class="yellowColor"><i class="fas fa-file-alt"></i> Case Study</p>
             </div>
-            <img src="Images/image3.avif" alt="">
+            <img src="Images/coffeeShopWebsite.jpg" alt="">
         </div>
         <!-- data 3 -->
         <div class="dataMain">
             <div class="onepart">
                 <div>
                     <p class="onepartP">Mobile App Design</p>
-                    <h4>Travel Mobile App</h4>
+                    <h4>Hotel booking App</h4>
                 </div>
                 <p class="yellowColor"><i class="fas fa-file-alt"></i> Case Study</p>
             </div>
-            <img src="Images/image3.avif" alt="">
+            <img src="Images/hotel bookin app.jpg" alt="">
         </div>
         <!-- data 4 -->
         <div class="dataMain">
             <div class="onepart">
                 <div>
-                    <p class="onepartP">Mobile App Design</p>
-                    <h4>Travel Mobile App</h4>
+                    <p class="onepartP">Web App Design</p>
+                    <h4>Web App Developer</h4>
                 </div>
                 <p class="yellowColor"><i class="fas fa-file-alt"></i> Case Study</p>
             </div>
-            <img src="Images/image3.avif" alt="">
+            <img src="Images/webapp.jpg" alt="">
         </div>
         <!-- data 5 -->
         <div class="dataMain">
             <div class="onepart">
                 <div>
                     <p class="onepartP">Mobile App Design</p>
-                    <h4>Travel Mobile App</h4>
+                    <h4>Mobile App Developer</h4>
                 </div>
                 <p class="yellowColor"><i class="fas fa-file-alt"></i> Case Study</p>
             </div>
-            <img src="Images/image3.avif" alt="">
+            <img src="Images/mobileapp.webp" alt="">
         </div>
         <!-- data 6 -->
         <div class="dataMain">
             <div class="onepart">
                 <div>
-                    <p class="onepartP">Mobile App Design</p>
-                    <h4>Travel Mobile App</h4>
+                    <p class="onepartP">Web App Design</p>
+                    <h4>Co Working Space Website</h4>
                 </div>
                 <p class="yellowColor"><i class="fas fa-file-alt"></i> Case Study</p>
             </div>
-            <img src="Images/image3.avif" alt="">
+            <img src="Images/co working space website.jpg" alt="">
         </div>
     </section>
     <div class="moreButtonMain">
@@ -223,7 +242,7 @@
     </div>
     <section id="afterImagesSection">
         <div class="mainAfter">
-            <img src="Images/image2.avif" alt="">
+            <img src="Images/image4" alt="">
             <div class="rightImage">
                 <i class="fas fas fa-quote-left yellowColor comma"></i>
                 <p class="detailsOwn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis veniam
@@ -264,9 +283,51 @@
                     <button>Contact me</button>
                 </div>
             </div>
-            <img src="Images/image2.avif" alt="">
+            <img src="Images/image1.avif" alt="">
         </div>
     </section>
+    <footer>
+        <div class="mainFooter">
+            <!-- data 1 -->
+            <div class="children">
+                <h3>Services</h3>
+                <p>UI/UX Designer</p>
+                <p>Web Developer</p>
+                <p>Mobile App Developer</p>
+                <p>Copy Writing</p>
+            </div class="children">
+            <div class="children">
+                <h3>About</h3>
+                <p>My HIstory</p>
+                <p>Blogs</p>
+                <p>NewsLetter</p>
+                <p>Price List</p>
+            </div>
+            <!-- data 2 -->
+            <div class="children">
+                <h3>Information</h3>
+                <p>Site Map</p>
+                <p>Contact Me</p>
+                <p>Comunity</p>
+            </div>
+            <div class="children">
+                <h3>Get Touch Me</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis hic voluptatem
+                    libero voluptas,
+                    sed magni commodi. .</p>
+                <div class="socialArea" style="margin-top: 0;">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="linelast">
+        <div class="lastArea">
+            <h1><i class="fas fa-grin-alt"></i> <span class="logoArea">Noman</span></h1>
+            <p>©Noman Ahmed 2023 all right reserved</p>
+        </div>
+    </footer>
 </body>
-
 </html>
